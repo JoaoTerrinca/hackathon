@@ -37,7 +37,7 @@ async function populateContent() {
             "price": 1000000,
             "location": "Rua São Jorge, n10, Sintra",
             "size": 465,
-            "description": "Beautiful hause, with natural light, 4 rooms, 3 bathrooms, gardem, garage, big kichten",
+            "description": "Beautiful house, with natural light, 4 rooms, 3 bathrooms, gardem, garage, big kichten",
             "views": 0,
             "type": TYPE[2],
             "room": ROOM[4],
@@ -53,9 +53,9 @@ async function populateContent() {
                 "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ],
             "price": 450000,
-            "location": "Rua São Jorge, n10, Oeiras",
+            "location": "Rua São João, n09, Oeiras",
             "size": 265,
-            "description": "Beautiful hause, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
+            "description": "Beautiful house, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[2],
             "room": ROOM[3],
@@ -67,13 +67,13 @@ async function populateContent() {
         {
             "image": [
                 "https://media.istockphoto.com/photos/large-house-with-steep-roof-and-side-entry-three-car-garage-picture-id1272163106?b=1&k=20&m=1272163106&s=170667a&w=0&h=pTjbBRKTcnhs-oIGpuSB4TyAE5768gp0BefDXxyUNTU=",
-                "https://media.istockphoto.com/photos/cozy-modern-kitchen-white-room-interior-3drender-picture-id1136936441?k=20&m=1136936441&s=612x612&w=0&h=0zhcz_lGblvOcNKKvCnkPXFRJmnz27DFZ47KBfJlPd0=",
+                /*esta a demorar abrir*/"https://media.istockphoto.com/photos/cozy-modern-kitchen-white-room-interior-3drender-picture-id1136936441?k=20&m=1136936441&s=612x612&w=0&h=0zhcz_lGblvOcNKKvCnkPXFRJmnz27DFZ47KBfJlPd0=",
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu_QGTJFVivKVtJve51E6i1PCORTwv7wH0XKSRxQJLXdZ170Pn6U_8IvLx3tOOAwMVCiY&usqp=CAU"
             ],
             "price": 550000,
-            "location": "Rua São Jorge, n10, Cascais",
+            "location": "Rua São Pedro, n15, Cascais",
             "size": 465,
-            "description": "Beautiful hause, with natural light, 4 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
+            "description": "Beautiful house, with natural light, 4 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[2],
             "room": ROOM[4],
@@ -89,9 +89,9 @@ async function populateContent() {
                 "https://t4.ftcdn.net/jpg/02/83/65/77/360_F_283657781_QXCc4JLQtFh6F28XFAm1ZHwiRSnjhHKy.jpg"
             ],
             "price": 850000,
-            "location": "Rua São Jorge, n10, Cascais",
+            "location": "Rua São Carlos Olivais, n30, Cascais",
             "size": 865,
-            "description": "Beautiful hause, with natural light, 5 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
+            "description": "Beautiful house, with natural light, 5 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[2],
             "room": ROOM[5],
@@ -108,9 +108,9 @@ async function populateContent() {
 
             ],
             "price": 650000,
-            "location": "Rua São Jorge, n10, Sintra",
+            "location": "Rua Santo António, n10, Sintra",
             "size": 565,
-            "description": "Beautiful hause, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
+            "description": "Beautiful house, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[2],
             "room": ROOM[3],
@@ -127,9 +127,9 @@ async function populateContent() {
 
             ],
             "price": 750000,
-            "location": "Rua São Jorge, n10, Sintra",
+            "location": "Rua Roma, n10, Sintra",
             "size": 365,
-            "description": "Beautiful hause, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
+            "description": "Beautiful house, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[2],
             "room": ROOM[3],
@@ -146,9 +146,9 @@ async function populateContent() {
 
             ],
             "price": 550000,
-            "location": "Rua São Jorge, n10, Alentejo",
+            "location": "Rua Rodolfo, n10, Alentejo",
             "size": 465,
-            "description": "Beautiful hause, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
+            "description": "Beautiful house, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[2],
             "room": ROOM[3],
@@ -165,9 +165,9 @@ async function populateContent() {
 
             ],
             "price": 550000,
-            "location": "Rua São Jorge, n90, Alentejo",
+            "location": "Rua Horta, n20, Alentejo",
             "size": 365,
-            "description": "Beautiful hause, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
+            "description": "Beautiful house, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[2],
             "room": ROOM[3],
@@ -178,15 +178,15 @@ async function populateContent() {
 
         {
             "image": [
-                "https://fitsmallbusiness.com/wp-content/uploads/2021/11/StockImage_House_with_Exterior_Lighting_and_Accents.jpg",
+                /*lento*/"https://fitsmallbusiness.com/wp-content/uploads/2021/11/StockImage_House_with_Exterior_Lighting_and_Accents.jpg",
                 "https://media.istockphoto.com/photos/contemporary-country-home-cabin-bathroom-design-with-vanity-and-linen-picture-id1317170725?b=1&k=20&m=1317170725&s=612x612&w=0&h=LT1C_9gGkqAOcTgI0gqn25gm1NyowZdaxMHdgcehpcY=",
                 "https://www.norfolkkitchenandbath.com/wp-content/uploads/2020/04/4999-Stock-Ech-w-Lam-1000x700-1.jpg"
                 
             ],
             "price": 150000,
-            "location": "Rua São Jorge, n90, Viseu",
+            "location": "Rua Santa Maria, n01, Viseu",
             "size": 265,
-            "description": "Beautiful hause, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
+            "description": "Beautiful house, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[2],
             "room": ROOM[3],
@@ -200,13 +200,14 @@ async function populateContent() {
                 "https://img00.rhimg.com/h.22794451.795.500.0.ffffff.288ae7aa.jpg",
                 "https://www.cliqstudios.com/media/cms-pages/cliqstudios-dayton-mendota-white-carbon-4124445-102-1920x1080.jpg",
                 "https://us.123rf.com/450wm/rilueda/rilueda2008/rilueda200800143/154302024-interior-of-a-hotel-bathroom-interior-with-shower-cabin.jpg?ver=6"
-                
+                 
+                /*Ficamos aqui*/ 
                 
             ],
             "price": 250000,
-            "location": "Rua São Jorge, n90, Loures",
+            "location": "Rua Sócrates, n09, Loures",
             "size": 165,
-            "description": "Beautiful hause, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
+            "description": "Beautiful house, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[2],
             "room": ROOM[3],
@@ -227,7 +228,7 @@ async function populateContent() {
                 
             ],
             "price": 190000,
-            "location": "Rua São Jorge, n90, Loures",
+            "location": "Rua Jorge João, n50, Loures",
             "size": 100,
             "description": "Beautiful apartment, with 2 rooms, 1 bathroom,  big kitchen, lovely neighborhood",
             "views": 0,
@@ -247,7 +248,7 @@ async function populateContent() {
                 
             ],
             "price": 290000,
-            "location": "Rua São Jorge, n90, Loures",
+            "location": "Rua Souto Maior, n13, Loures",
             "size": 200,
             "description": "Beautiful apartment, with 3 rooms, 2 bathrooms,  big kitchen, lovely neighborhood",
             "views": 0,
@@ -268,7 +269,7 @@ async function populateContent() {
                 
             ],
             "price": 350000,
-            "location": "Rua São Jorge, n90, Restelo",
+            "location": "Rua Carlos Alberto, n19, Restelo",
             "size": 200,
             "description": "Beautiful apartment, with 1 rooms, 1 bathroom,  big kitchen, lovely neighborhood",
             "views": 0,
@@ -288,7 +289,7 @@ async function populateContent() {
                 
             ],
             "price": 550000,
-            "location": "Rua São Jorge, n90, Lisboa",
+            "location": "Rua Jorge Luís Castro, n61, Lisboa",
             "size": 270,
             "description": "Beautiful apartment, with 2 rooms, 1 bathroom,  big kitchen, lovely neighborhood",
             "views": 0,
@@ -310,8 +311,8 @@ async function populateContent() {
                 
             ],
             "price": 790000,
-            "location": "Rua São Jorge, n90, Lisboa",
-            "size": 100,
+            "location": "Rua Dom Carlos, n26, Lisboa",
+            "size": 440,
             "description": "Beautiful apartment, with 3 rooms, 2 bathrooms, kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[0],
@@ -332,8 +333,8 @@ async function populateContent() {
                 
             ],
             "price": 490000,
-            "location": "Rua São Jorge, n90, Lisboa",
-            "size": 100,
+            "location": "Rua Orla, n22, Lisboa",
+            "size": 120,
             "description": "Beautiful apartment, with 2 rooms, 1 bathroom, balcony, picturesque neighborhood",
             "views": 0,
             "type": TYPE[0],
@@ -355,8 +356,8 @@ async function populateContent() {
                 
             ],
             "price": 390000,
-            "location": "Rua São Jorge, n90, Almada",
-            "size": 100,
+            "location": "Rua São Carlos, n03, Almada",
+            "size": 140,
             "description": "Beautiful apartment, with 3 rooms, 2 bathrooms,  big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[0],
@@ -378,8 +379,8 @@ async function populateContent() {
                 
             ],
             "price": 400000,
-            "location": "Rua São Jorge, n90, Lisboa",
-            "size": 100,
+            "location": "Rua São Juliao, n40, Lisboa",
+            "size": 200,
             "description": "Beautiful apartment, with 1 rooms, 1 bathroom,  big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[0],
@@ -393,44 +394,319 @@ async function populateContent() {
 
         {
             "image": [
-           
+                "https://media.istockphoto.com/photos/cityscape-with-residential-buildings-in-late-autumn-picture-id1069330600?k=20&m=1069330600&s=612x612&w=0&h=7i2g9tOroF2giabBj0J16yUbWCXSbwuElFnU-ozUnVI=",
+                "https://www.huntwood.com/wp-content/uploads/2021/05/Home3.jpg",
+                "https://media.istockphoto.com/photos/posters-in-cozy-apartment-interior-picture-id943910360?k=20&m=943910360&s=612x612&w=0&h=nkX_Nr3FPR4qv79rvmqmBKn9qVzusmlHArtrenIzda0="
                 
                 
             ],
-            "price": 190000,
-            "location": "Rua São Jorge, n90, Olivais",
-            "size": 100,
+            "price": 390000,
+            "location": "Rua dos Olivais, n30, Algarve",
+            "size": 200,
             "description": "Beautiful apartment, with 2 rooms, 1 bathroom,  big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[0],
             "room": ROOM[2],
             "creationDate": "2000-07-15",
             "wc": 1,
-            "energy": ENERGY[4]         
+            "energy": ENERGY[2]         
         },
 
 
 
         {
             "image": [
-           
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReY0oiCY4104EEk8wGswihUgzavsN6Q4R1Og&usqp=CAU",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnVosANr2MWYS1IVxNyM8v0GTj4xujOdH9v01MXSdW4gfVQhPUTWD5y0gkO7XdFceLlHY&usqp=CAU",
+                "https://media.gettyimages.com/photos/facade-of-new-modern-apartment-house-copy-space-picture-id1146066753?b=1&k=20&m=1146066753&s=170667a&w=0&h=nGGbL5ICuQbcOSkOikD0-fBdDgiwPtpsZrkpgmuH_Q4="
                 
-                
+               
             ],
-            "price": 190000,
-            "location": "Rua São Jorge, n90, Loures",
-            "size": 100,
-            "description": "Beautiful apartment, with 2 rooms, 1 bathroom,  big kitchen, lovely neighborhood",
+            "price": 490000,
+            "location": "Rua António, n70, Loures",
+            "size": 150,
+            "description": "Beautiful apartment, with 3 rooms, 2 bathrooms,  big kitchen, lovely neighborhood",
+            "views": 0,
+            "type": TYPE[0],
+            "room": ROOM[3],
+            "creationDate": "2000-07-15",
+            "wc": 2,
+            "energy": ENERGY[5]         
+        },
+/*  more adding*/
+        {
+            "image": [
+
+
+             "https://www.nit.pt/wp-content/uploads/2018/05/d95679752134a2d9eb61dbd7b91c4bcc-754x394.jpeg",
+                "https://www.portodomushotel.pt/wp-content/uploads/2014/12/IMGL6431-1.jpg",
+
+               
+            ],
+            "price": 490000,
+            "location": "Rua António, n70, Caxias",
+            "size": 150,
+            "description": "Beautiful apartment, with 3 rooms, 2 bathrooms,  big kitchen, lovely neighborhood",
+            "views": 0,
+            "type": TYPE[0],
+            "room": ROOM[3],
+            "creationDate": "2000-07-15",
+            "wc": 2,
+            "energy": ENERGY[5]         
+        },
+        
+        {
+            "image": [
+                "https://static.portadafrente.com/PF14001/pf14001-apartamento-t1-lisboa-1.jpg",
+                "https://i.pinimg.com/736x/d2/d2/1d/d2d21d83d1920278f9227cfe60944918.jpg"
+
+               
+            ],
+            "price": 590000,
+            "location": "Rua António, n70, Oeiras",
+            "size": 150,
+            "description": "Beautiful apartment, with 3 rooms, 2 bathrooms,  big kitchen, lovely neighborhood",
+            "views": 0,
+            "type": TYPE[0],
+            "room": ROOM[3],
+            "creationDate": "2000-07-15",
+            "wc": 2,
+            "energy": ENERGY[3]         
+        },
+
+        {
+            "image": [
+                "https://www.angelapinheiro.pt/wp-content/uploads/2021/06/quarto-da-C-EM2_4771.jpg",
+                "https://www.kuroservices.pt/wp-content/uploads/2019/10/apartamento_00.jpg"
+            ],
+            "price": 490000,
+            "location": "Rua Santa Lusieda, n70, Parede",
+            "size": 150,
+            "description": "Beautiful apartment, with 2 rooms, 2 bathrooms,  big kitchen, lovely neighborhood",
             "views": 0,
             "type": TYPE[0],
             "room": ROOM[2],
             "creationDate": "2000-07-15",
-            "wc": 1,
-            "energy": ENERGY[5]         
+            "wc": 2,
+            "energy": ENERGY[4]         
         },
+
+
+        {
+            "image": [
+                "https://www.milobras.pt/wp-content/uploads/2016/02/remodelacao-de-apartamentos.jpg",
+                "https://thumbs.dreamstime.com/b/patterned-armchair-near-white-wooden-bed-grey-bedroom-interior-pouf-plants-real-photo-patterned-armchair-near-white-124693896.jpg"
+            ],
+            "price": 490000,
+            "location": "Rua Santo António, n70, Lourel",
+            "size": 150,
+            "description": "Beautiful apartment, with 3 rooms, 2 bathrooms,  big kitchen, lovely neighborhood",
+            "views": 0,
+            "type": TYPE[0],
+            "room": ROOM[3],
+            "creationDate": "2000-07-15",
+            "wc": 2,
+            "energy": ENERGY[1]         
+        },
+
+
+        {
+            "image": [
+                "https://www.urbanobras.pt/wp-content/uploads/2019/08/redemola%C3%A7%C3%A3o-apartamento-contru%C3%A7%C3%A3o-obras-Urban-Obras.jpg",
+                "https://media.istockphoto.com/photos/wood-table-top-on-blur-kitchen-counter-background-picture-id1162090981?k=20&m=1162090981&s=612x612&w=0&h=0iJloY--oJ0YvQtu6RNEfSx-Kyn0MUR-yBWvOjBYvYQ="
+                              
+            ],
+            "price": 490000,
+            "location": "Rua David, n70, Loures",
+            "size": 150,
+            "description": "Beautiful apartment, with 3 rooms, 2 bathrooms,  big kitchen, lovely neighborhood",
+            "views": 0,
+            "type": TYPE[0],
+            "room": ROOM[3],
+            "creationDate": "2000-07-15",
+            "wc": 2,
+            "energy": ENERGY[2]         
+        },
+
+
+        {
+            "image": [
+                "https://t3.ftcdn.net/jpg/03/27/29/42/360_F_327294250_AXlJzz90xcfIOjf44LqhVY8vSaGMgaWh.jpg",
+                "https://media.istockphoto.com/photos/empty-concrete-wall-picture-id990278494?b=1&k=20&m=990278494&s=170667a&w=0&h=HNOuu0hwy7xsqL2xv4C0FSSfb6x01IRHxJt1k8w-a0U="
+                              
+            ],
+            "price": 490000,
+            "location": "Rua António, n70, Lourel",
+            "size": 150,
+            "description": "Beautiful apartment, with 3 rooms, 2 bathrooms,  big kitchen, lovely neighborhood",
+            "views": 0,
+            "type": TYPE[0],
+            "room": ROOM[3],
+            "creationDate": "2020-07-15",
+            "wc": 2,
+            "energy": ENERGY[3]         
+        },
+
+
+
+
+
+
         
+        /*-----escritorio------- */
+        {
+            "image": [
+             
+                "https://media.istockphoto.com/photos/modern-gadgets-in-interior-of-coworking-office-during-covid19-picture-id1284066336?k=20&m=1284066336&s=612x612&w=0&h=wGvv6yVnqXy3bFx8DQu7-RbxQk2ooMqujTFdGkYEksM=",
+                "https://imagens.supercasa.pt/Z800x600/OAYES/S5/C312/WP8668/Tphoto/IDdc210000-0000-0500-0000-00000eddfc38.jpg"
 
 
+            ],
+            "price": 490000,
+            "location": "Rua António Arroio, n70, Loures",
+            "size": 100,
+            "description": "Office space, well located, close to metro and bus stations, with good lighting, modern, renovated",
+            "views": 0,
+            "type": TYPE[1],
+            "room": ROOM[3],
+            "creationDate": "2009-07-15",
+            "wc": 2,
+            "energy": ENERGY[2]         
+        },
+
+        {
+            "image": [
+                "https://us.123rf.com/450wm/4kclips/4kclips2006/4kclips200600568/149777563-amoreiras-shopping-center-in-lisbon-lisbon-portugal-2017.jpg?ver=6",
+                "https://leap.pt/wp-content/uploads/2018/02/breather-168766.jpg"
+                
+               
+            ],
+            "price": 490000,
+            "location": "Amoreiras, Lisboa",
+            "size": 210,
+            "description": "Office space, well located, close to metro and bus stations, with good lighting, modern, renovated",
+            "views": 0,
+            "type": TYPE[1],
+            "room": ROOM[2],
+            "creationDate": "2007-07-15",
+            "wc": 3,
+            "energy": ENERGY[3]   
+
+        },
+
+
+        {
+            "image": [
+                "https://t4.ftcdn.net/jpg/03/84/55/29/360_F_384552930_zPoe9zgmCF7qgt8fqSedcyJ6C6Ye3dFs.jpg",
+                "https://media.istockphoto.com/photos/empty-road-at-building-exterior-picture-id479842074?k=20&m=479842074&s=612x612&w=0&h=HS6lsU1f9W21IkotS3cxdvU5KeEO-gLMUa6xrIBbR6k="
+                
+                
+               
+            ],
+            "price": 490000,
+            "location": "Rua Ermelinda, n23, Cascais",
+            "size": 340,
+            "description": "Office space, well located, close to metro and bus stations, with good lighting, modern, renovated",
+            "views": 0,
+            "type": TYPE[1],
+            "room": ROOM[2],
+            "creationDate": "2009-07-15",
+            "wc": 4,
+            "energy": ENERGY[4]   
+
+        },
+
+
+
+        {
+            "image": [
+                "Phttps://coworker.imgix.net/photos/portugal/lisbon/regus-lisbon-parque-das-nacoes/a03fee273a6a6da9a5717d8a8a1649c1.jpg?w=1200&h=0&q=90&auto=format,compress&fit=crop&mark=/template/img/wm_icon.png&markscale=5&markalign=center,middle",
+                "https://www.lisbonportugaltourism.com/images/parque-das-nacoes-lisbon.jpg"
+
+               
+            ],
+            "price": 490000,
+            "location": "Parque das Nações, n33, Lisboa",
+            "size": 400,
+            "description": "Office space, well located,close to metro and bus stations, with good lighting, modern, renovated",
+            "views": 0,
+            "type": TYPE[1],
+            "room": ROOM[5],
+            "creationDate": "2009-07-15",
+            "wc": 2,
+            "energy": ENERGY[2]   
+
+        },
+
+
+
+
+        {
+            "image": [
+             
+                "https://as2.ftcdn.net/v2/jpg/00/02/91/39/1000_F_2913917_xtmwEt2irWpzI5bu35kt3isXKdnSlP.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMdLLGJc0S_tavS8CPdisnbqF_utXVdNy02g&usqp=CAU"
+               
+            ],
+            "price": 490000,
+            "location": "Rua António Arroio, n70, Parque das Nações",
+            "size": 100,
+            "description": "Office space, well located, close to metro and bus stations, with good lighting, modern, renovated",
+            "views": 0,
+            "type": TYPE[1],
+            "room": ROOM[3],
+            "creationDate": "2009-07-15",
+            "wc": 2,
+            "energy": ENERGY[2]   
+
+        },
+
+
+
+
+
+        {
+            "image": [
+             
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcUEbUDjmA596An0kxGkExnAI9eYl41bPXNA&usqp=CAU",
+                "https://media.istockphoto.com/photos/reception-desk-in-interior-picture-id992220626?k=20&m=992220626&s=612x612&w=0&h=OhGGIjZ1qDwqf9V3fmCBAMi0nGZt5X1RYEl4ZDfPeo4="
+               
+            ],
+            "price": 490000,
+            "location": "Rua António Arroio, n70, Loures",
+            "size": 400,
+            "description": "Office space, well located, close to bus stations, with good lighting, modern, renovated",
+            "views": 0,
+            "type": TYPE[1],
+            "room": ROOM[3],
+            "creationDate": "2009-07-15",
+            "wc": 3,
+            "energy": ENERGY[2]   
+
+        },
+
+        {
+            "image": [
+                "https://cdn.modlar.com/photos/9190/img/s_1920_x/_x1a3233_596e80a030424.jpg",
+                "https://static7.depositphotos.com/1022135/722/i/600/depositphotos_7225694-stock-photo-modern-office.jpg"
+                
+               
+            ],
+            "price": 490000,
+            "location": "Rua António Arroio, n70, Almada",
+            "size": 300,
+            "description": "Office space, well located, close bus stations, with good lighting, modern, renovated",
+            "views": 0,
+            "type": TYPE[1],
+            "room": ROOM[3],
+            "creationDate": "2009-07-15",
+            "wc": 2,
+            "energy": ENERGY[2]   
+
+        },
+
+
+    
 
 
 
