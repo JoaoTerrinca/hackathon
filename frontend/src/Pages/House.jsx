@@ -132,7 +132,7 @@ export default function House() {
                 >Adicionar
                 </button>
             }
-            <button onClick={() => navigate(`/catalog`)} className="buttonBig2">Voltar</button>
+            <button onClick={() => navigate(`/`)} className="buttonBig2">Voltar</button>
         </div>
     )
 }
