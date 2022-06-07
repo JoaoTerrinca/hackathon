@@ -5,6 +5,7 @@ import Login from './Pages/Login'
 import Register from './Pages/Register';
 import Houses from './Pages/Houses';
 import House from './Pages/House';
+import User from './Pages/User';
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Houses />} />
         <Route path="/estates" element={<Houses />} />
         <Route path="/estate/:id" element={<House />} />
+        <Route path="/user" element={<User />} />
       </Routes>
     </div>
   );

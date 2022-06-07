@@ -102,20 +102,12 @@ aplication.get("/time", authenticate, async (req, res) => {
     res.status(200).json(time)
 })
 
-aplication.get("/list", authenticate, async (req, res) => {
-    const user = req.user
-    //const list = await findListByUserId(String(user._id))
-    //console.log(user._id)
-    const list = await findProgressesAgregation(user._id)
-    //console.log(list)
-    res.status(200).json(list)
+aplication.post("/click", authenticateNULL, async (req, res) => {
+    const { estateId }  = req.body
+    console.log(estateId)
+    res.status(200)
 })
 
-aplication.get("/list/progress/:id", authenticate, async (req, res) => {
-    const id = req.params.id
-    const progress = await findProgressById(id)
-    res.status(200).json(progress)
-})
 
 aplication.get("/estates", authenticateNULL, async (req, res) => {
     const catalog = await findAllEstate()
