@@ -84,7 +84,6 @@ export default function House() {
                         </div>
                     </div>
             }
-
             {
                 Object.keys(estate).length !== 0 &&
                 <div>

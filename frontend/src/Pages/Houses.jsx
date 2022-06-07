@@ -53,7 +53,25 @@ export default function Houses() {
         return json
     }
 
+    async function postClick(id) {
+        console.log(id)
+        const res = await fetch("/api/click", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                estateId: id
+            })
+        })
+        return res
+    }
+
     function handleClick(_id) {
+        if (token) {
+            postClick(_id)
+        }
+        // guarda na colletion click
         return navigate(`/estate/${String(_id)}`)
     }
 
