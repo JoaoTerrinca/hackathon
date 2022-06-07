@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb')
 const URL = process.env.MONGO_URL ?? "mongodb://localhost:27017"
 
-const DATABASE_NAME = "hackthon03"
+const DATABASE_NAME = "hack303"
 const COLLECTION_USER = "user"
 const COLLECTION_ESTATE = "estate"
 const COLLECTION_SESSION = "session"
@@ -31,7 +31,7 @@ async function getMongoCollection(dbName, collectionName) {
 
 async function getCollection(collectionName) {
     const client = await connectToMongo()
-    return client.db("projetofinal").collection(collectionName)
+    return client.db(DATABASE_NAME).collection(collectionName)
 }
 
 module.exports = {

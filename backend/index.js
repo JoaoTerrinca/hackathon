@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT ?? 3090
+const port = process.env.PORT ?? 33030
 const { aplication, api } = require("./routes")
 
 app.use("/api", aplication)

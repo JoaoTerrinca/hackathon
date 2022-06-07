@@ -1,7 +1,5 @@
 const { ObjectId } = require('mongodb')
 const express = require("express")
-
-
 const {
     testEmail,
     testUsername,
@@ -19,24 +17,10 @@ const {
     createSession,
     findToken
 } = require("./services/session")
-/*
 const {
-    findAllContent,
-    findContentById
-} = require("./content")
-const {
-    findListByUserId,
-    createList,
-    updateListByUserId
-} = require("./list")
-const {
-    findProgressById,
-    updateProgressByUserId,
-    createProgress,
-    findProgressesAgregation,
-    findProgressByContentAndUser
-} = require("./progress")
-*/
+    findAllEstate,
+    findEstateById
+} = require("./services/estate")
 const aplication = express.Router()
 const api = express.Router()
 
@@ -133,14 +117,14 @@ aplication.get("/list/progress/:id", authenticate, async (req, res) => {
     res.status(200).json(progress)
 })
 
-aplication.get("/catalog", authenticateNULL, async (req, res) => {
-    const catalog = await findAllContent()
+aplication.get("/estates", authenticateNULL, async (req, res) => {
+    const catalog = await findAllEstate()
     res.status(200).json(catalog)
 })
 
-aplication.get("/catalog/content/:id", authenticateNULL, async (req, res) => {
+aplication.get("/estate/:id", authenticateNULL, async (req, res) => {
     const id = req.params.id
-    const content = await findContentById(id)
+    const content = await findEstateById(id)
     res.status(200).json(content)
 })
 
