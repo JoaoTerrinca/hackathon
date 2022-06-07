@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import styles from "./style.module.css"
 
+
 export default function Houses() {
     const token = (localStorage.getItem("token") !== "null") ?
         localStorage.getItem("token") :
@@ -60,6 +61,7 @@ export default function Houses() {
     function filter(e) {
         setFilterEstates(estates.filter(estate => (String(estate.location)).toLowerCase().includes(e.target.value) == true))
     }
+    
 
     return (
         <div>
@@ -102,10 +104,10 @@ export default function Houses() {
                     gap: "25px",
                     width: "20vw"
                 }}>
-                <button>Type</button>
-                <button>Room</button>
                 <button>Price</button>
                 <button>Size</button>
+                <button>Type</button>
+                <button>WC</button>
                 <button>Energy</button>
             </div>
 
@@ -149,4 +151,5 @@ export default function Houses() {
             </div>
         </div >
     )
+    
 }

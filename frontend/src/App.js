@@ -6,6 +6,8 @@ import Register from './Pages/Register';
 import Houses from './Pages/Houses';
 import House from './Pages/House';
 
+
+
 function App() {
   return (
     <div className="App">
@@ -20,4 +22,8 @@ function App() {
   );
 }
 
+
 export default App;
+
+
+
