@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
+import "./Register.css"
 
 export default function Login() {
     const [email, setEmail] = useState("")
@@ -44,8 +45,8 @@ export default function Login() {
 
     return (
 
-        <div >
-            <div>
+        <div className="background" >
+            <div className="caixa">
                 <form onSubmit={handleSubmit}>
                     {
                         errors.length > 0 &&
@@ -54,7 +55,7 @@ export default function Login() {
 
                     <div>
                         <label>E-mail</label>
-                        <input type="text" value={email} onChange={(e) => handleUserInput(e, "email")} />
+                        <input type="text" className="caixaTexto" value={email} onChange={(e) => handleUserInput(e, "email")} />
                         <br /><br></br>
                     </div>
 
@@ -63,7 +64,7 @@ export default function Login() {
                         <label >Password</label>
                         <input
                             type={toggle ? "text" : "password"}
-
+                            className="caixaTexto"
                             value={password}
                             onChange={(e) => handleUserInput(e, "password")}>
                         </input>
@@ -72,10 +73,10 @@ export default function Login() {
                         Forget password
                     </div><br></br>
                     <div >
-                        <input type="submit" value="Login"></input>
+                        <input type="submit" className="buttonBig2" value="Login"></input>
                     </div>
                     <div onClick={() => navigate(`/register`)}>
-                        <input type="submit" value="Create account"></input>
+                        <input type="submit" className="buttonBig2" value="Create account"></input>
                     </div>
                 </form>
             </div>

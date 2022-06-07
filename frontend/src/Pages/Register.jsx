@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
+import "./Register.css"
 
 export default function Register() {
     const [username, setUsername] = useState("")
@@ -113,36 +114,38 @@ export default function Register() {
     }
 
     return (
-        <div>
+        <div className="background">
+            <div className="caixa">
 
-            <div className="divSignUp">
-                <h1>Welcome</h1>
-                {/* {console.log(errors)} */}
+                <div className="divSignUp">
+                    <h1 className="bemvindo">Welcome</h1>
+                    {/* {console.log(errors)} */}
 
-                <form onSubmit={handleSubmit}>
-                    {
-                        errors.map((error, i) => {
-                            return <p key={i} style={{ color: "red" }}>{String(error)}</p>
-                        })
-                    }
+                    <form onSubmit={handleSubmit}>
+                        {
+                            errors.map((error, i) => {
+                                return <p key={i} style={{ color: "red" }}>{String(error)}</p>
+                            })
+                        }
 
-                    <label className="formUsername">Username</label>
-                    <input type="text" className="caixaTexto" value={username} onChange={(e) => handleUserInput(e, "username")} /> <br />
+                        <label className="formUsername">Username</label>
+                        <input type="text" className="caixaTexto" value={username} onChange={(e) => handleUserInput(e, "username")} /> <br />
 
-                    <label className="formEmail">Email</label>
-                    <input type="text" className="caixaTexto" value={email} onChange={(e) => handleUserInput(e, "email")} /> <br />
+                        <label className="formEmail">Email</label>
+                        <input type="text" className="caixaTexto" value={email} onChange={(e) => handleUserInput(e, "email")} /> <br />
 
-                    <label className="formBirthday">Birthday</label>
-                    <input type="text" className="caixaTexto" value={birthday} onChange={(e) => handleUserInput(e, "birthday")} /> <br />
+                        <label className="formBirthday">Birthday</label>
+                        <input type="text" className="caixaTexto" value={birthday} onChange={(e) => handleUserInput(e, "birthday")} /> <br />
 
-                    <label className="formPassword">Password</label>
-                    <input type="password" className="caixaTexto" value={password} onChange={(e) => handleUserInput(e, "password")} /> <br />
+                        <label className="formPassword">Password</label>
+                        <input type="password" className="caixaTexto" value={password} onChange={(e) => handleUserInput(e, "password")} /> <br />
 
-                    <label className="formConfirmPassword">Confirm Password</label>
-                    <input type="password" className="caixaTexto" value={confirmPassword} onChange={(e) => handleUserInput(e, "confirmPassword")} />
-                    <br />
-                    <input style={{ marginLeft: "30px" }} type="submit" value="Create Account" className="buttonBig2" />
-                </form>
+                        <label className="formConfirmPassword">Confirm Password</label>
+                        <input type="password" className="caixaTexto" value={confirmPassword} onChange={(e) => handleUserInput(e, "confirmPassword")} />
+                        <br />
+                        <input type="submit" value="Create Account" className="buttonBig2" />
+                    </form>
+                </div>
             </div>
         </div>
     )
