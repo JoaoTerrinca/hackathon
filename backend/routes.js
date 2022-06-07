@@ -1,7 +1,7 @@
 const { ObjectId } = require('mongodb')
 const express = require("express")
 
-/*
+
 const {
     testEmail,
     testUsername,
@@ -9,16 +9,17 @@ const {
     testPasswordConfirmation,
     testBirthday,
     emailPasswordLogin
-} = require("./auth");
+} = require("./services/auth");
 const {
     createUser,
     findUserByEmailPassword,
     findUserId
-} = require("./user")
+} = require("./services/user")
 const {
     createSession,
     findToken
-} = require("./session")
+} = require("./services/session")
+/*
 const {
     findAllContent,
     findContentById
@@ -35,6 +36,7 @@ const {
     findProgressesAgregation,
     findProgressByContentAndUser
 } = require("./progress")
+*/
 const aplication = express.Router()
 const api = express.Router()
 
@@ -196,7 +198,7 @@ async function authenticate(req, res, next) {
     req.user = user //e guardamos no pedido
     next() // salta para o proxim0o
 }
-*/
+
 
 // Export
 module.exports = {
