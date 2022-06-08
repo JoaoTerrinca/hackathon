@@ -25,11 +25,11 @@ const ENERGY = [
 
 function userPreferences(data){
     let array = []
-    //console.log(data)
+    console.log(data)
     data.map((house) => {
         array.push(house.estate[0])
     })
-
+    console.log(array)
     let priceMin = Math.min(...array.map((elemento) => elemento.price))
     let priceMax = Math.max(...array.map((elemento) => elemento.price))
 
