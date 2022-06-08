@@ -1,8 +1,8 @@
 
 const TYPE = [
-    "aparatamento",
+    "Apartamentp",
     "Escritorio",
-    "vivenda"
+    "Vivenda"
 ]
 
 const ROOM = [
@@ -25,7 +25,7 @@ const ENERGY = [
 
 function userPreferences(data){
     let array = []
-
+    //console.log(data)
     data.map((house) => {
         array.push(house.estate[0])
     })
@@ -42,7 +42,7 @@ function userPreferences(data){
     let roomMin = Math.max(...array.map((elemento) => elemento.price))
     let roomMax = Math.max(...array.map((elemento) => elemento.price))
 
-    let wcMin = Math.max(...array.map((elemento) => elemento.wc))
+    let wcMin = Math.min(...array.map((elemento) => elemento.wc))
     let wcMax = Math.max(...array.map((elemento) => elemento.wc))
 
     let energyMin = Math.max(...array.map((elemento) => elemento.price))

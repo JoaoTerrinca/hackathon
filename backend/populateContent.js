@@ -10,19 +10,28 @@ async function populateContent() {
     await collection.insertMany([
         {
             "image": [
-                "https://entretenimento.plu7.com/wp-content/uploads/2022/03/Na-serie-de-TV-Halo-a-guerra-nao-e-um.jpg",
-                "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.latercera.com%2Fmouse%2Flos-nuevos-posters-de-la-serie-de-halo-muestran-en-detalle-a-sus-personajes%2F&psig=AOvVaw2snVc075DxVZnc4PEMRKCF&ust=1654254306275000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjLttjPjvgCFQAAAAAdAAAAABAU"
+                "https://lh3.googleusercontent.com/yG1jSRSnoPC5quiyqwdbJoWry30O0iRR0cWGyPjuSI-MBvaZ-HJq8XElQnK4HFCY22JsFBlk8-khF0DjajLGsaP_Oyqctk3Zc68VDhRFH4Zte8VoIVmMfXEABm1wB2ZrRP_l3_8sUes=w1920-h1080",
+                "https://i.pinimg.com/originals/cb/2b/53/cb2b5308641062764e2fe5a8b18752d6.jpg",
+                "https://i.pinimg.com/originals/56/5c/f8/565cf8bdad892d46675c1a17356e31bd.jpg"
             ],
-            "price": 2323,
-            "location": "SDUHIJO",
+            "price": 772323,
+            "location": "Rua Jordania, Malveira da Serra",
             "size": 23240,
-            "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+            "description": "Beautiful house, with natural light, 4 rooms, 3 bathrooms, gardem, garage, big kichten",
             "views": 0,
+<<<<<<< HEAD
+            "type": TYPE[2],
+            "room": ROOM[4],
+            "creationDate": "2000-07-15",
+            "wc": 3,
+            "energy": ENERGY[3]         
+=======
             "type": TYPE[0],
             "room": ROOM[1],
             "creationDate": "2016-07-15",
             "wc": 1,
             "energy": ENERGY[0]
+>>>>>>> b2e002e901ab50019def18da0cb966b32699506a
         },
 
         /*-------------- Vivendas---------*/
@@ -35,7 +44,7 @@ async function populateContent() {
 
             ],
             "price": 1000000,
-            "location": "Rua São Jorge, n10, Sintra",
+            "location": "Rua São Julião, n10, Sintra",
             "size": 465,
             "description": "Beautiful house, with natural light, 4 rooms, 3 bathrooms, gardem, garage, big kichten",
             "views": 0,
@@ -53,7 +62,7 @@ async function populateContent() {
                 "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             ],
             "price": 450000,
-            "location": "Rua São João, n09, Oeiras",
+            "location": "Rua Amália Rodrigues, n09, Oeiras",
             "size": 265,
             "description": "Beautiful house, with natural light, 3 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
@@ -71,7 +80,7 @@ async function populateContent() {
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu_QGTJFVivKVtJve51E6i1PCORTwv7wH0XKSRxQJLXdZ170Pn6U_8IvLx3tOOAwMVCiY&usqp=CAU"
             ],
             "price": 550000,
-            "location": "Rua São Pedro, n15, Cascais",
+            "location": "Rua Natal, n15, Cascais",
             "size": 465,
             "description": "Beautiful house, with natural light, 4 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,
@@ -89,7 +98,7 @@ async function populateContent() {
                 "https://t4.ftcdn.net/jpg/02/83/65/77/360_F_283657781_QXCc4JLQtFh6F28XFAm1ZHwiRSnjhHKy.jpg"
             ],
             "price": 850000,
-            "location": "Rua São Carlos Olivais, n30, Cascais",
+            "location": "Rua Inglesa, n30, Cascais",
             "size": 865,
             "description": "Beautiful house, with natural light, 5 rooms, 2 bathrooms, garden, garage, big kitchen, lovely neighborhood",
             "views": 0,

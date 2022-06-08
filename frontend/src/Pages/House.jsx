@@ -65,14 +65,14 @@ export default function House() {
 
     return (
 
-        <div >
+        <div className="tudopa">
             {
                 token ?
                     <div style={{ float: "right", marginRight: "20px", marginTop: "10px" }}>
                         <div
                             onClick={() => navigate(`/user`)}
                         >
-                            <img src="" alt="icon" />
+                            {/* <img src="" alt="icon" /> */}
                             <p>{user.username}</p>
                         </div>
                         <br />
@@ -92,26 +92,19 @@ export default function House() {
                     <div class="iconAdding">
                         <i class="fa-solid fa-check checked"></i>
                         <i class="fa-solid fa-circle-plus checked"></i>
-                        <div style={{ marginTop: "200px" }}>
+                        <div classname="casadesc" style={{ marginTop: "200px" }}>
                             <h1 style={{
                                 textAlign: "center",
                                 fontSize: "70px",
                             }}>
                                 {estate.type}
                             </h1>
-                            <div>
-                                <div >
-                                    <div className="imagemdecadacasa"><img src={estate.image[0]} /></div>
-                                </div>
-                                <div
-                                    style={{ display: "inline" }}
-                                >
-                                    <p>{estate.description}</p>
-                                    <p>
-                                        {estate.wc}
-                                    </p>
-                                </div>
 
+                            <div className="imagemdecadacasa"><img src={estate.image[0]} /></div>
+                            <p style={{ fontSize: "50px" }}>Description</p>
+                            <div className="paracima">{estate.description}</div>
+                            <div style={{ display: "inline" }}>
+                                {estate.wc}
                             </div>
 
                         </div>
@@ -119,13 +112,13 @@ export default function House() {
                 </div>
             }
             {
-                token &&
-                <button
-                    onClick={() => add()}
-                >Adicionar
-                </button>
+                // token &&
+                // <button className="butao"
+                //     onClick={() => add()}
+                // >Adicionar
+                // </button>
             }
             <button onClick={() => navigate(`/`)} className="buttonBig2">Voltar</button>
-        </div>
+        </div >
     )
 }

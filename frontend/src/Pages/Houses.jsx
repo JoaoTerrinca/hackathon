@@ -60,6 +60,7 @@ export default function Houses() {
         const res = await fetch("/api/click", {
             method: "POST",
             headers: {
+                "Authenticate": localStorage.getItem("token"),
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
@@ -77,7 +78,7 @@ export default function Houses() {
             }
         })
         const json = await res.json()
-        console.log(json)
+
         return json
     }
 
@@ -151,7 +152,11 @@ function Estate({ estate, handleClick }) {
     return (
         <div key={estate._id} className="estateListItem" onClick={() => handleClick(estate._id)} >
             <div className="estateListItemImage" style={{ backgroundImage: `url(${estate.image[0]})` }}></div>
-            <div className="estateListItemText">{estate.location}</div>
+            <div className="estateListItemText">
+                <p>{estate.location}</p>
+                <p>{estate.size} m 2</p>
+                <p>{estate.price} €</p>
+            </div>
         </div>
     )
 }
