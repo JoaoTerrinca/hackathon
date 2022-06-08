@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
+import "./houses.css"
 
 export default function House() {
     const token = (localStorage.getItem("token") !== "null") ?
@@ -64,7 +65,7 @@ export default function House() {
 
     return (
 
-        <div>
+        <div >
             {
                 token ?
                     <div style={{ float: "right", marginRight: "20px", marginTop: "10px" }}>
@@ -100,7 +101,7 @@ export default function House() {
                             </h1>
                             <div>
                                 <div >
-                                    <div><img src={estate.image[0]} /></div>
+                                    <div className="imagemdecadacasa"><img src={estate.image[0]} /></div>
                                 </div>
                                 <div
                                     style={{ display: "inline" }}
