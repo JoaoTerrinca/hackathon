@@ -88,7 +88,7 @@ export default function Register() {
         const json = await res.json()
         if (res.status === 200) {
             localStorage.setItem('token', json.token)
-            navigate("/catalog") // vai mas o token tá fudido
+            navigate("/") // vai mas o token tá fudido
         }
     }
 

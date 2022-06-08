@@ -19,19 +19,11 @@ async function populateContent() {
             "size": 23240,
             "description": "Beautiful house, with natural light, 4 rooms, 3 bathrooms, gardem, garage, big kichten",
             "views": 0,
-<<<<<<< HEAD
-            "type": TYPE[2],
-            "room": ROOM[4],
-            "creationDate": "2000-07-15",
-            "wc": 3,
-            "energy": ENERGY[3]         
-=======
             "type": TYPE[0],
             "room": ROOM[1],
             "creationDate": "2016-07-15",
             "wc": 1,
             "energy": ENERGY[0]
->>>>>>> b2e002e901ab50019def18da0cb966b32699506a
         },
 
         /*-------------- Vivendas---------*/

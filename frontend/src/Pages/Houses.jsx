@@ -151,7 +151,10 @@ export default function Houses() {
 function Estate({ estate, handleClick }) {
     return (
         <div key={estate._id} className="estateListItem" onClick={() => handleClick(estate._id)} >
-            <div className="estateListItemImage" style={{ backgroundImage: `url(${estate.image[0]})` }}></div>
+            <div className="estateListItemImage" style={{
+                backgroundImage: `url(https://cdn.houseplansservices.com/product/6ek8jns2uvt3p24kbigoctc4ih/w800x533.jpg?v=13)`,
+                backgroundImage: `url(${estate.image[0]})`
+            }}></div>
             <div className="estateListItemText">
                 <p>{estate.location}</p>
                 <p>{estate.size} m 2</p>
