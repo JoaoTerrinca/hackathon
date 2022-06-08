@@ -13,6 +13,9 @@ async function findLast5Preference(id) {
         { userId: id }
     ).sort({$natural:1}).limit(5).toArray();
     */
+
+
+    // return await collection.find({userId: id}).limit(5).toArray()
     
     return await collection.aggregate([
         {
@@ -25,6 +28,11 @@ async function findLast5Preference(id) {
                 'localField': 'estateId', 
                 'foreignField': '_id', 
                 'as': 'estate'
+            }
+        },
+        {
+            $sort: {
+                'addDate': -1
             }
         }
     ]).limit(5).toArray()

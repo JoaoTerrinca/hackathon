@@ -13,14 +13,15 @@ async function findEstateById(id) {
 }
 
 async function findEstateByPerfect(data) {
-   
     const collection = await getMongoCollection(DATABASE_NAME, COLLECTION_ESTATE)
-    return await collection.find({
-            price: { $gt :  data.priceMin, $lt : data.priceMax},
-            size: { $gt :  data.sizeMin, $lt : data.sizeMax},
-            wc: { $gt :  data.wcMin, $lt : data.wcMax},
+    const result = await collection.find({
+        $and: [
+            {price: { $gt :  data.priceMin, $lt : data.priceMax}},
+            {size: { $gt :  data.sizeMin, $lt : data.sizeMax}}, 
+            {wc: { $gt :  data.wcMin, $lt : data.wcMax}},
+        ]
         }).toArray() 
-    // TODO não funcemina ainda
+    return result
 }
 
 module.exports = { 

@@ -99,13 +99,14 @@ aplication.get("/get-user", authenticateNULL, (req, res) => {
     res.status(200).json(user)
 })
 
-aplication.post("/click", authenticateNULL, async (req, res) => {
+aplication.post("/click", authenticate, async (req, res) => {
     const { estateId, userId } = req.body
     const data = {
         estateId: new ObjectId(estateId),
-        userId: new ObjectId(userId),
+        userId: new ObjectId(req.user._id),
         addDate: new Date()
     }
+
     const pref = await createPreference(data)
     res.sendStatus(200)
 })
@@ -115,14 +116,32 @@ aplication.get("/recomended", authenticateNULL, async (req, res) => {
 
     const pr = await findLast5Preference(user._id)
     const recomended = userPreferences(pr)
+    //console.log(recomended)
     const list = await findEstateByPerfect(recomended)
+    //console.log(list)
 
     res.status(200).json(list)
 })
 
 aplication.get("/estates", authenticateNULL, async (req, res) => {
     const catalog = await findAllEstate()
-    res.status(200).json(catalog)
+
+
+    const user = req.user
+    //console.log(user)
+    const pr = await findLast5Preference(user._id)
+    const recomended = userPreferences(pr)
+    let list = await findEstateByPerfect(recomended)
+
+
+    const finalList = [...list, ...catalog].reduce((acc, ele) => {
+        return acc.some(house => house._id === ele._id) ? acc : [...acc, ele]
+        //acc.some(cuja casa tenhja o id do elemento presente?) nao adiciona
+        //senao, adiciona
+    }, [])
+
+    console.log(finalList.length, list.length, catalog.length)
+    res.status(200).json(finalList)
 })
 
 aplication.get("/estate/:id", authenticateNULL, async (req, res) => {
