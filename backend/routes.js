@@ -129,19 +129,24 @@ aplication.get("/estates", authenticateNULL, async (req, res) => {
 
     const user = req.user
     //console.log(user)
-    const pr = await findLast5Preference(user._id)
-    const recomended = userPreferences(pr)
-    let list = await findEstateByPerfect(recomended)
+    if(user){
+        const pr = await findLast5Preference(user._id)
+        const recomended = userPreferences(pr)
+        let list = await findEstateByPerfect(recomended)
 
 
-    const finalList = [...list, ...catalog].reduce((acc, ele) => {
-        return acc.some(house => house._id === ele._id) ? acc : [...acc, ele]
-        //acc.some(cuja casa tenhja o id do elemento presente?) nao adiciona
-        //senao, adiciona
-    }, [])
+        const finalList = [...list, ...catalog].reduce((acc, ele) => {
+            return acc.some(house => house._id === ele._id) ? acc : [...acc, ele]
+            //acc.some(cuja casa tenhja o id do elemento presente?) nao adiciona
+            //senao, adiciona
+        }, [])
 
-    console.log(finalList.length, list.length, catalog.length)
-    res.status(200).json(finalList)
+        //console.log(finalList.length, list.length, catalog.length)
+        res.status(200).json(finalList)
+    } else{
+        res.status(200).json([])
+    }
+    
 })
 
 aplication.get("/estate/:id", authenticateNULL, async (req, res) => {

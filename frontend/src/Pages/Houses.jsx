@@ -18,6 +18,8 @@ export default function Houses() {
             fetchLogin().then((result) => {
                 setUser(result)
             })
+        } else {
+            navigate("/login")
         }
 
         fetchHouses().then(estates => {
