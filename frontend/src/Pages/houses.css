@@ -1,0 +1,179 @@
+.houses {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+
+/* .houses::before {
+    content: "";
+    background-image: url("https://images.unsplash.com/photo-1654624386400-ce10b95e2b9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    width: 100%;
+    height: 100%;
+} */
+
+.estateList {
+    background-color: #FFFFFF;
+    height: 100%;
+    margin: auto;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70vw;
+    padding-right: 50px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    margin-right: 30px;
+    background: #f1f1f1;
+    border-radius: 50px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.estateListRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.estateListItem {
+    display: flex;
+    width: 45%;
+    height: 150px;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.estateListItem:hover {
+    box-shadow: 0px 0px 17px -6px rgba(0,0,0,0.75);
+}
+
+.estateListItemImage {
+    border-radius: 20px 0px 0px 20px;
+    width: 30%;
+    height: 100%;
+    background-size: cover
+}
+
+.estateListItemText {
+    padding: 15px;
+    text-align: left;
+    width: 70%;
+    height: 80%;
+    background-color: #f5f5f5;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.housesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    width: 100%;
+}
+
+.housesFilter {
+    height: 300px;
+    float: left;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15vw;
+}
+
+.filterButton {
+    background-color: #5C7DA0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    border-radius: 10px;
+    height: 70px;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.filterButton:hover {
+    opacity: 0.7;
+}
+
+.housesBody {
+    width: 100%;
+    height: 75%;
+}
+
+.userSettings {
+    height: 100%;
+    color: #FFFFFF;
+    font-size: 20px;
+    float: right; 
+    margin-right: 20px;
+    font-family: 'Montserrat';
+}
+
+.pageName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    width: 300px;
+    height: 70px;
+    background-color: #5C7DA0;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.estateWrapper {
+
+}
+
+.estateImage {
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: 350px;
+}
+
+.estateDescription {
+    margin-top: 15px; 
+    padding: 5px;
+    padding-top: 10px;
+    text-align: left;
+}

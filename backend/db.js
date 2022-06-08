@@ -5,6 +5,7 @@ const DATABASE_NAME = "hack303"
 const COLLECTION_USER = "user"
 const COLLECTION_ESTATE = "estate"
 const COLLECTION_SESSION = "session"
+const COLLECTION_PREFERENCE = "preferences"
 
 /**
  * Connection to the MongoDB Database
@@ -39,6 +40,7 @@ module.exports = {
     COLLECTION_USER,
     COLLECTION_SESSION,
     COLLECTION_ESTATE,
+    COLLECTION_PREFERENCE,
     getMongoCollection,    
     getCollection
 }

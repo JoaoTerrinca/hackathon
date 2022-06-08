@@ -84,7 +84,6 @@ export default function House() {
                         </div>
                     </div>
             }
-
             {
                 Object.keys(estate).length !== 0 &&
                 <div>
@@ -100,15 +99,8 @@ export default function House() {
                                 {estate.type}
                             </h1>
                             <div>
-                                <div
-                                    style={{
-                                        width: "200px",
-                                        height: "200px",
-                                        padding: "0px",
-                                        backgroundImage: `url(${estate.image[0]}`,
-                                        backgroundSize: "200px 500px"
-                                    }}
-                                >
+                                <div >
+                                    <div><img src={estate.image[0]} /></div>
                                 </div>
                                 <div
                                     style={{ display: "inline" }}
@@ -132,7 +124,7 @@ export default function House() {
                 >Adicionar
                 </button>
             }
-            <button onClick={() => navigate(`/catalog`)} className="buttonBig2">Voltar</button>
+            <button onClick={() => navigate(`/`)} className="buttonBig2">Voltar</button>
         </div>
     )
 }
