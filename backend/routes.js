@@ -19,8 +19,16 @@ const {
 } = require("./services/session")
 const {
     findAllEstate,
-    findEstateById
+    findEstateById,
+    findEstateByPerfect
 } = require("./services/estate")
+const {
+    createPreference,
+    findLast5Preference
+} = require("./services/preferences")
+const {
+    userPreferences,
+} = require("./services/services")
 const aplication = express.Router()
 const api = express.Router()
 
@@ -90,24 +98,27 @@ aplication.get("/get-user", authenticateNULL, (req, res) => {
     const user = req.user
     res.status(200).json(user)
 })
-aplication.get("/time", authenticate, async (req, res) => {
-    const user = req.user
-    const list = await findProgressesAgregation(user._id)
-    //console.log(list)
-    let time = 0
-    list.map((progress)=> {
-        time += progress.content.seconds
-    })
-    //console.log(time)
-    res.status(200).json(time)
-})
 
 aplication.post("/click", authenticateNULL, async (req, res) => {
-    const { estateId }  = req.body
-    console.log(estateId)
-    res.status(200)
+    const { estateId, userId } = req.body
+    const data = {
+        estateId: new ObjectId(estateId),
+        userId: new ObjectId(userId),
+        addDate: new Date()
+    }
+    const pref = await createPreference(data)
+    res.sendStatus(200)
 })
 
+aplication.get("/recomended", authenticateNULL, async (req, res) => {
+    const user = req.user
+
+    const pr = await findLast5Preference(user._id)
+    const recomended = userPreferences(pr)
+    const list = await findEstateByPerfect(recomended)
+
+    res.status(200).json(list)
+})
 
 aplication.get("/estates", authenticateNULL, async (req, res) => {
     const catalog = await findAllEstate()
@@ -120,35 +131,8 @@ aplication.get("/estate/:id", authenticateNULL, async (req, res) => {
     res.status(200).json(content)
 })
 
-aplication.post("/catalog/content/:id", authenticateNULL, async (req, res) => {
-    const id = req.params.id
-    //console.log(req.body)
-    const { userId, contentId } = req.body
-
-    const progressInsert = {
-        userId: new ObjectId(userId),
-        contentId: new ObjectId(contentId),
-        percentage: 0,
-        ranking: 0,
-        state: "unknow",
-    }
-    const existing = await findProgressByContentAndUser(userId, contentId)
-    if(existing){
-        updateProgressByUserId(userId, {
-            ...existing,
-            percentage: 20
-        }).then(id => {
-            res.status(200).json(id)         
-        })
-    } else {
-        createProgress(progressInsert).then(id => {
-            res.status(200).json(id)         
-        })
-    }
-})
-
 async function authenticateNULL(req, res, next) {
-    const gotToken = req.headers.authenticate//é o token que vem do frontend
+    const gotToken = req.headers.authenticate //é o token que vem do frontend
     //console.log("CATALOG TOKEN: " + typeof gotToken)
     if (gotToken !== "null" && gotToken !== undefined) {
         const result = await findToken(gotToken) //verifica se o token existe na sessao
@@ -174,7 +158,6 @@ async function authenticate(req, res, next) {
     req.user = user //e guardamos no pedido
     next() // salta para o proxim0o
 }
-
 
 // Export
 module.exports = {
