@@ -100,15 +100,8 @@ export default function House() {
                                 {estate.type}
                             </h1>
                             <div>
-                                <div
-                                    style={{
-                                        width: "200px",
-                                        height: "200px",
-                                        padding: "0px",
-                                        backgroundImage: `url(${estate.image[0]}`,
-                                        backgroundSize: "200px 500px"
-                                    }}
-                                >
+                                <div >
+                                    <div><img src={estate.image[0]} /></div>
                                 </div>
                                 <div
                                     style={{ display: "inline" }}
